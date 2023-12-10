@@ -1,0 +1,98 @@
+@import '../../styles/variables.scss';
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 200px;
+  height: 500px;
+  width: 100%;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 80px;
+}
+
+.principalLabel {
+  font-family: "Robot-Bold";
+  font-size: 70px;
+  color: $primaryColor;
+  text-align: left;
+  letter-spacing: 3px;
+}
+
+.principalDescription {
+  font-family: "Robot-Regular";
+  font-size: 16px;
+  color: $primaryColor;
+  text-align: left;
+}
+
+.principalScore {
+  font-family: "Robot-Bold";
+  font-size: 40px;
+  color: $primaryColor;
+  text-align: left;
+}
+
+.arrowImgContainer {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #5ca3a8;
+  display: flex;
+  justify-content: center;
+}
+
+.tryNowButton {
+  border-radius: 30px;
+  width: 175px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  background-color: $backgroundBlue;
+  border: none;
+  box-shadow: 0 6px 5px -1px #8fbdbe;
+  cursor: pointer;
+  font-family: 'Robot-Regular';
+  font-size: 18px;
+  color: $primaryColor;
+}
+
+.circularCardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.rightSectionH2 {
+  font-family: "Robot-Bold";
+  font-size: 20px;
+  color: $primaryColor;
+  text-align: left;
+}
+
+.rightSectionDescription {
+  font-family: "Robot-Regular";
+  font-size: 13px;
+  color: #574747;
+  text-align: left;
+}
+
+.containerDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

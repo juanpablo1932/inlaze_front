@@ -1,0 +1,43 @@
+@import '../../styles/variables.scss';
+
+.container {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.firstContainer {
+  width: 215px;
+  height: 215px;
+  border-radius: 50%;
+  background-color: #dfbed8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.secondContainer {
+  width: 202px;
+  height: 202px;
+  border-radius: 50%;
+  background-color: #475751;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.sectionName {
+  font-family: "Robot-Bold";
+  font-size: 20px;
+  color: $primaryColor;
+  text-align: center;
+}

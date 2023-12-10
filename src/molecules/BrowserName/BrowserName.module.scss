@@ -1,0 +1,12 @@
+.separator {
+  width: 100%;
+  height: 8px;
+  background-color: #475751
+}
+
+.section {
+  display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+}

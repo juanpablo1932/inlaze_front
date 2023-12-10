@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.container {
+  border-radius: 50%;
+  background-color: $backgroundBlue;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 7px -1px #6d7072;
+}
