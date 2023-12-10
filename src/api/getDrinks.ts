@@ -20,3 +20,13 @@ export const getDrinkById = async (id: string) => {
     return error;
   }
 };
+export const getDrinsByIngredients = async (name: string) => {
+  const url = `filter.php?i=${name}`;
+
+  try {
+    const resp = await validateFetch(url);
+    return resp.data;
+  } catch (error) {
+    return error;
+  }
+};

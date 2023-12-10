@@ -16,8 +16,6 @@ export default function BrowserName() {
   const navigate = useNavigate();
   const { setFilterLetter, filterLetter } = useContext(AppContext);
   const [data, setData] = useState<Drink[]>([]);
-  console.log(filterLetter);
-  console.log(data);
 
   const alphabet = "A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y/Z";
 
@@ -53,10 +51,15 @@ export default function BrowserName() {
       <div style={{ width: "100%" }}>
         <p>Browse By Name</p>
         <div>
-          <div>
-            <span onClick={clearFilter}>Borrar/</span>
+          <div style={{ letterSpacing: "5px" }}>
+            <span onClick={clearFilter} style={{ cursor: "pointer" }}>
+              Borrar/
+            </span>
             {alphabet.split("").map((letter, index) => (
-              <span key={index} onClick={() => handleFilter(letter)}>
+              <span
+                style={{ cursor: "pointer" }}
+                key={index}
+                onClick={() => handleFilter(letter)}>
                 {letter}
               </span>
             ))}
